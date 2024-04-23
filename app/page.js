@@ -1,9 +1,9 @@
-import Navbar from "@/components/Navbar";
+import HomePage from "@/Pages/HomePage";
 
 export default function Home() {
   return (
-    <main className="bg-light w-full min-h-screen">
-      <Navbar />
+    <main className="bg-light w-full">
+      <HomePage />
     </main>
   );
 }

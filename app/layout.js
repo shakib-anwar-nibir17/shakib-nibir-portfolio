@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
@@ -13,7 +14,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={`${montserrat.className} bg-light `}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

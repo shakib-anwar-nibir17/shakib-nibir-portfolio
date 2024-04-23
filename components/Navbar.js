@@ -1,5 +1,4 @@
 "use client";
-
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -25,7 +24,7 @@ const CustomLinks = ({ href, title, className = "" }) => {
 
 const Navbar = () => {
   return (
-    <header className="w-full px-32 py-6 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-6 font-medium flex items-center justify-between text-xl">
       <nav>
         <CustomLinks href="/" title="Home" className="mr-4" />
         <CustomLinks href="/about" title="About" className="mx-4" />
