@@ -28,6 +28,7 @@ const Navbar = () => {
       <nav>
         <CustomLinks href="/" title="Home" className="mr-4" />
         <CustomLinks href="/about" title="About" className="mx-4" />
+        <CustomLinks href="/skills" title="Skills" className="mx-4" />
         <CustomLinks href="/projects" title="Projects" className="mx-4" />
         <CustomLinks href="/contact" title="Contact" className="ml-4" />
       </nav>
