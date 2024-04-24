@@ -11,14 +11,14 @@ const HomePage = () => {
           src="/banner.png"
           alt="banner"
           height={300}
-          width={500}
+          width={400}
           className="border w-3/4"
         />
       </div>
       <div className="w-1/2 flex flex-col">
         <AnimateText
           text="Bringing Ideas to Life Through Code and Creativity."
-          className="!text-5xl !text-left"
+          className="text-5xl text-left"
         />
         <p className="my-4 font-medium">
           As a skilled full-stack developer, I am dedicated to turning ideas

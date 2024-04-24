@@ -9,7 +9,7 @@ const AboutPage = () => {
     <>
       <AnimateText
         text="Passion lights the path to purpose"
-        className="my-20 !text-7xl"
+        className="my-20 text-7xl"
       />
       <div className="grid w-full grid-cols-8 gap-16 px-32">
         <AboutMe />
