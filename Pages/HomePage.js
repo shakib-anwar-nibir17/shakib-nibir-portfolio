@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <div className="flex justify-center items-center px-32 min-h-[800px] gap-20 py-10">
+    <div className="flex justify-center items-center px-32 gap-20 py-10">
       <div class="w-1/2 flex justify-center">
         <Image
           src="/banner.png"
           alt="banner"
-          height={500}
+          height={300}
           width={500}
           className="border w-3/4"
         />
@@ -18,9 +18,9 @@ const HomePage = () => {
       <div className="w-1/2 flex flex-col">
         <AnimateText
           text="Bringing Ideas to Life Through Code and Creativity."
-          className="!text-7xl !text-left"
+          className="!text-5xl !text-left"
         />
-        <p className="my-4 font-medium text-xl">
+        <p className="my-4 font-medium">
           As a skilled full-stack developer, I am dedicated to turning ideas
           into innovative web applications. Explore my latest projects and
           articles, showcasing my expertise in React.js and web development
