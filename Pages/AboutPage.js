@@ -1,5 +1,6 @@
 import AboutMe from "@/components/AboutMe";
 import AnimateText from "@/components/AnimateText";
+import Education from "@/components/Education";
 import ProfileImage from "@/components/ProfileImage";
 import Stats from "@/components/Stats";
 
@@ -15,6 +16,7 @@ const AboutPage = () => {
         <ProfileImage />
         <Stats />
       </div>
+      <Education />
     </>
   );
 };
