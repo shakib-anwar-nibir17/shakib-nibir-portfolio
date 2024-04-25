@@ -2,17 +2,18 @@ import AnimateText from "@/components/AnimateText";
 import { ContactIcon, LinkArrow } from "@/components/Icons";
 import Image from "next/image";
 import Link from "next/link";
+import banner from "../public/banner.png";
 
 const HomePage = () => {
   return (
     <div className="flex justify-center items-center px-32 gap-20 py-10">
       <div class="w-1/2 flex justify-center">
         <Image
-          src="/banner.png"
+          src={banner}
           alt="banner"
           height={300}
           width={400}
-          className="border w-3/4"
+          className="w-3/4"
         />
       </div>
       <div className="w-1/2 flex flex-col">
