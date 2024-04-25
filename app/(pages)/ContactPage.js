@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 "use client";
 import AnimateText from "@/components/AnimateText";
 import { motion } from "framer-motion";

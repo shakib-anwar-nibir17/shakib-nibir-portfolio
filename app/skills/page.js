@@ -1,4 +1,4 @@
-import SkillPage from "@/Pages/SkillPage";
+import SkillPage from "@/app/(pages)/SkillPage";
 
 export default function Skills() {
   return (

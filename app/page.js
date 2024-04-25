@@ -1,4 +1,4 @@
-import HomePage from "@/Pages/HomePage";
+import HomePage from "@/app/(pages)/HomePage";
 import HireMe from "@/components/HireMe";
 import Image from "next/image";
 

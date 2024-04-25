@@ -4,7 +4,6 @@ import { skills } from "@/database/Skills";
 
 const SkillPage = () => {
   const skillArray = skills;
-  console.log(skillArray);
   return (
     <>
       <AnimateText text="Skills and Technology" className="my-20 text-7xl" />

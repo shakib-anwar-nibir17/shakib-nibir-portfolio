@@ -1,4 +1,4 @@
-import ContactPage from "@/Pages/ContactPage";
+import ContactPage from "@/app/(pages)/ContactPage";
 
 export default function About() {
   return (

@@ -2,7 +2,7 @@ import AnimateText from "@/components/AnimateText";
 import { ContactIcon, LinkArrow } from "@/components/Icons";
 import Image from "next/image";
 import Link from "next/link";
-import banner from "../public/banner.png";
+import banner from "../../public/banner.png";
 
 const HomePage = () => {
   return (

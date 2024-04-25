@@ -1,4 +1,4 @@
-import ProjectPage from "@/Pages/ProjectPage";
+import ProjectPage from "@/app/(pages)/ProjectPage";
 
 export default function About() {
   return (
