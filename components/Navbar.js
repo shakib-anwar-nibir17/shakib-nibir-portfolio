@@ -1,8 +1,14 @@
 "use client";
+import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SvgComponentGithub, SvgComponentLinkedIn } from "./Icons";
+import {
+  MoonIcon,
+  SunIcon,
+  SvgComponentGithub,
+  SvgComponentLinkedIn,
+} from "./Icons";
 import Logo from "./Logo";
 
 const CustomLinks = ({ href, title, className = "" }) => {
@@ -14,7 +20,7 @@ const CustomLinks = ({ href, title, className = "" }) => {
       <span
         className={`h-[1px] inline-block  bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           path === href ? "w-full" : "w-0"
-        }`}
+        } dark:bg-light`}
       >
         &nbsp;
       </span>
@@ -23,8 +29,9 @@ const CustomLinks = ({ href, title, className = "" }) => {
 };
 
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
   return (
-    <header className="w-full px-32 py-6 font-medium flex items-center justify-between min-h-[7vh]">
+    <header className="w-full px-32 py-6 font-medium flex items-center justify-between min-h-[7vh] dark:text-light">
       <nav>
         <CustomLinks href="/" title="Home" className="mr-4" />
         <CustomLinks href="/about" title="About" className="mx-4" />
@@ -40,7 +47,7 @@ const Navbar = () => {
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
-          <SvgComponentGithub className="w-10 h-8" />
+          <SvgComponentGithub className="w-6 h-6" />
         </motion.a>
         <motion.a
           href="/"
@@ -48,8 +55,19 @@ const Navbar = () => {
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
-          <SvgComponentLinkedIn className="w-10 h-10" />
+          <SvgComponentLinkedIn className="w-8 h-10" />
         </motion.a>
+
+        <button
+          className="flex items-center justify-center rounded-full p-1"
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark dark:fill-light"} />
+          ) : (
+            <MoonIcon className={"fill-dark dark:fill-light"} />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />

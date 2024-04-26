@@ -21,7 +21,7 @@ const HomePage = () => {
           text="Bringing Ideas to Life Through Code and Creativity."
           className="text-5xl text-left"
         />
-        <p className="my-4 font-medium">
+        <p className="my-4 font-medium dark:text-light">
           As a skilled full-stack developer, I am dedicated to turning ideas
           into innovative web applications. Explore my latest projects and
           articles, showcasing my expertise in React.js and web development
@@ -30,16 +30,17 @@ const HomePage = () => {
           <Link
             href="/Shakib_Nibir_Resume.pdf"
             target={"_blank"}
-            className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+            className="flex items-center bg-dark dark:bg-white dark:text-dark dark:border-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark hover:dark:bg-primaryDark hover:dark:border-light"
             download={true}
           >
             Resume <LinkArrow className="w-6 ml-1" />
           </Link>
           <Link
-            href="mailto:nibirshakib@gmail.com"
-            className="ml-4 text-lg font-medium text-dark border-2 border-dark p-2.5 px-6 rounded-lg border-solid flex items-center"
+            href="/contact"
+            className="ml-4 text-lg font-medium text-dark dark:text-light border-2 border-dark dark:border-light p-2 px-6 rounded-lg border-solid flex items-center"
           >
-            Contact <ContactIcon className="w-6 ml-1 text-dark" />
+            Contact{" "}
+            <ContactIcon className="w-6 ml-1 text-dark dark:text-light" />
           </Link>
         </div>
       </div>
