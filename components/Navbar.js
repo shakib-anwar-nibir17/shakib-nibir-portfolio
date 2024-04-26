@@ -1,14 +1,10 @@
 "use client";
-import useThemeSwitcher from "@/hooks/useThemeSwitcher";
+import useThemeSwitcher from "@/components/hooks/useThemeSwitcher";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  MoonIcon,
-  SunIcon,
-  SvgComponentGithub,
-  SvgComponentLinkedIn,
-} from "./Icons";
+import { SiGithub, SiLinkedin } from "react-icons/si";
+import { MoonIcon, SunIcon } from "./Icons";
 import Logo from "./Logo";
 
 const CustomLinks = ({ href, title, className = "" }) => {
@@ -30,6 +26,8 @@ const CustomLinks = ({ href, title, className = "" }) => {
 
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
+  console.log(mode);
+
   return (
     <header className="w-full px-32 py-6 font-medium flex items-center justify-between min-h-[7vh] dark:text-light">
       <nav>
@@ -47,15 +45,16 @@ const Navbar = () => {
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
-          <SvgComponentGithub className="w-6 h-6" />
+          <SiGithub className="text-2xl" />
         </motion.a>
+
         <motion.a
           href="/"
           target={"_blank"}
           whileHover={{ y: -4 }}
           whileTap={{ scale: 0.9 }}
         >
-          <SvgComponentLinkedIn className="w-8 h-10" />
+          <SiLinkedin className="text-2xl" />
         </motion.a>
 
         <button
@@ -63,9 +62,9 @@ const Navbar = () => {
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
         >
           {mode === "dark" ? (
-            <SunIcon className={"fill-dark dark:fill-light"} />
+            <SunIcon className={"fill-dark"} />
           ) : (
-            <MoonIcon className={"fill-dark dark:fill-light"} />
+            <MoonIcon className={"fill-dark"} />
           )}
         </button>
       </nav>

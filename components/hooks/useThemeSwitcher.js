@@ -8,12 +8,13 @@ const useThemeSwitcher = () => {
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkQuery);
     const userPref = window.localStorage.getItem("theme");
-    console.log(mediaQuery);
+    console.log(userPref);
 
     const handleChange = () => {
       if (userPref) {
         let check = userPref === "dark" ? "dark" : "light";
         setMode(check);
+        console.log(check, mode);
         if (check === "dark") {
           document.documentElement.classList.add("dark");
         } else {
@@ -22,6 +23,7 @@ const useThemeSwitcher = () => {
       } else {
         let check = mediaQuery.matches ? "dark" : "light";
         setMode(check);
+        console.log(check, mode);
         if (check === "dark") {
           document.documentElement.classList.add("dark");
         } else {
@@ -39,7 +41,8 @@ const useThemeSwitcher = () => {
     if (mode === "dark") {
       window.localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
-    } else {
+    }
+    if (mode === "light") {
       window.localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }
