@@ -30,23 +30,23 @@ const Stats = () => {
   return (
     <div className="col-span-2 flex flex-col items-end justify-between">
       <div className="flex flex-col items-end justify-center">
-        <span className="font-bold inline-block text-7xl">
+        <span className="font-bold inline-block text-7xl dark:text-light">
           <AnimateNumbers value={10} />+
         </span>
-        <h2 className="text-xl font-medium capitalize text-dark/75">
+        <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
           Project Completed
         </h2>
       </div>
       <div className="flex flex-col items-end justify-center">
-        <span className="font-bold inline-block text-7xl">
+        <span className="font-bold inline-block text-7xl dark:text-light">
           <AnimateNumbers value={1} />+
         </span>
-        <h2 className="text-xl font-medium capitalize text-dark/75">
+        <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
           Years of Hands on Experience
         </h2>
       </div>
       <div className="flex flex-col items-end justify-center">
-        <h2 className="text-3xl font-bold capitalize text-dark">
+        <h2 className="text-3xl font-bold capitalize text-dark dark:text-light">
           Full Stack Developer
         </h2>
       </div>

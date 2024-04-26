@@ -14,18 +14,22 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     >
       <LiIcon reference={ref} />
       <div className="space-y-2">
-        <h3 className="capitalize font-bold text-2xl">{position}</h3>
+        <h3 className="capitalize font-bold text-2xl dark:text-light">
+          {position}
+        </h3>
         <h1>
           <Link
             href={companyLink}
             target="_blank"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize"
           >
             {time} | {company}
           </Link>
         </h1>
-        <span className="capitalize text-dark/75 font-medium">{address}</span>
-        <p className="text-dark font-medium">{work}</p>
+        <span className="capitalize text-dark/75 dark:text-light/75 font-medium">
+          {address}
+        </span>
+        <p className="text-dark dark:text-light font-medium">{work}</p>
       </div>
     </li>
   );
@@ -40,14 +44,14 @@ const Education = () => {
 
   return (
     <div className="my-64">
-      <h2 className="font-bold text-6xl mb-32 w-full text-center">
+      <h2 className="font-bold text-6xl mb-32 w-full text-center dark:text-light">
         Education and Certification
       </h2>
       <div className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="absolute left-9 top-0 bg-dark h-[150%] w-1 origin-top"
+          className="absolute left-9 top-0 bg-dark dark:bg-primaryDark h-[150%] w-1 origin-top"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
