@@ -22,26 +22,26 @@ const ContactPage = () => {
         animate={{ y: "0%" }}
         transition={{ duration: 1.75 }}
       >
-        <div className="flex items-center px-32 justify-center gap-20">
+        <div className="flex items-center px-32 justify-center gap-20 dark:text-light">
           {/* FORM CONTAINER */}
           <form
             ref={form}
-            className="h-1/2 lg:h-full lg:w-1/2 bg-light rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+            className="h-1/2 lg:h-full lg:w-1/2 bg-light dark:bg-dark rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
           >
             <span>Your Message,</span>
             <textarea
               rows={6}
-              className="bg-light border-b-2 border-b-dark outline-none resize-none"
+              className="bg-light dark:bg-dark border-b-2 border-b-dark dark:border-b-light outline-none resize-none"
               name="user_message"
             />
             <span>Your mail address:</span>
             <input
               name="user_email"
               type="email"
-              className="bg-transparent border-b-2 border-b-black outline-none"
+              className="bg-light dark:bg-dark border-b-2 border-b-black dark:border-b-light outline-none"
             />
             <span>Regards</span>
-            <button className="bg-primary/75 rounded font-semibold text-light p-4">
+            <button className="bg-primary/75 dark:bg-primaryDark rounded font-semibold text-light dark:text-dark p-4">
               Send
             </button>
             {success && (

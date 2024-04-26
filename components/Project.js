@@ -10,7 +10,7 @@ const Project = ({
   github_server = "",
 }) => {
   return (
-    <article className="w-full flex items-center justify-center gap-10 rounded-2xl border border-solid border-dark bg-light p-6 relative">
+    <article className="w-full flex items-center justify-center gap-10 rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light dark:text-light">
       <Link
         href={link}
         target="_blank"
@@ -19,7 +19,9 @@ const Project = ({
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
