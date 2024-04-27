@@ -10,11 +10,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-8 last:mb-0 w-[60%] mx-auto flex flex-col"
+      className="my-8 first:mt-8 last:mb-0 w-[60%]  mx-auto flex flex-col"
     >
       <LiIcon reference={ref} />
       <div className="space-y-2">
-        <h3 className="capitalize font-bold text-2xl dark:text-light">
+        <h3 className="capitalize font-bold text-2xl md:text-xl dark:text-light">
           {position}
         </h3>
         <h1>
@@ -29,7 +29,9 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="capitalize text-dark/75 dark:text-light/75 font-medium">
           {address}
         </span>
-        <p className="text-dark dark:text-light font-medium">{work}</p>
+        <p className="text-dark md:text-sm dark:text-light font-medium">
+          {work}
+        </p>
       </div>
     </li>
   );
@@ -43,15 +45,15 @@ const Education = () => {
   });
 
   return (
-    <div className="my-64">
-      <h2 className="font-bold text-6xl mb-32 w-full text-center dark:text-light">
+    <div className="my-64 lg:my-32 md:my-20">
+      <h2 className="font-bold text-6xl xl:text-5xl lg:text-4xl md:text-3xl mb-32 w-full text-center dark:text-light">
         Education and Certification
       </h2>
       <div className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="absolute left-9 top-0 bg-dark dark:bg-primaryDark h-[150%] w-1 origin-top"
+          className="absolute left-9 top-0 bg-dark dark:bg-primaryDark h-[150%] md:h-[100%] w-1 origin-top"
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
