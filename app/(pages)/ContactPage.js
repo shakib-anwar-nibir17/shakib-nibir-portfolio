@@ -26,7 +26,7 @@ const ContactPage = () => {
           {/* FORM CONTAINER */}
           <form
             ref={form}
-            className="h-1/2 lg:h-full lg:w-1/2 bg-light dark:bg-dark rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+            className="h-1/2 lg:h-full w-3/4 bg-light dark:bg-dark rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
           >
             <span>Your Message,</span>
             <textarea

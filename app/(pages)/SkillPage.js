@@ -7,7 +7,7 @@ const SkillPage = () => {
   return (
     <>
       <AnimateText text="Skills and Technology" className="my-20 text-7xl" />
-      <div className="grid w-full grid-cols-1 md:grid-cols-3 lg:grid-cols-8 gap-4 md:gap-16 px-32">
+      <div className="grid w-full grid-cols-8 gap-10 px-32">
         {skillArray.map((skill, id) => (
           <BoxIcon key={id} image={skill.image} name={skill.name} />
         ))}
