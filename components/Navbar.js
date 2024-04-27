@@ -60,7 +60,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full xs:px-4 px-32 py-6 font-medium flex items-center justify-between min-h-[7vh] dark:text-light relative">
+    <header className="w-full px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 xs:px-4 py-6 font-medium flex items-center justify-between min-h-[7vh] dark:text-light relative">
       <button
         onClick={handleChange}
         className="flex-col justify-center items-center hidden lg:flex"
@@ -123,7 +123,11 @@ const Navbar = () => {
       </div>
 
       {isOpen ? (
-        <div className="xs:min-w-[90vw] hidden  min-w-[70vw] lg:flex flex-col  justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32">
+        <motion.div
+          initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
+          animate={{ scale: 1, opacity: 1 }}
+          className="xs:min-w-[90vw] hidden  min-w-[70vw] lg:flex flex-col  justify-between z-30 items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 transition-all ease-out duration-300"
+        >
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLinks href="/" title="Home" toggle={handleChange} />
             <CustomMobileLinks
@@ -178,9 +182,9 @@ const Navbar = () => {
               )}
             </button>
           </nav>
-        </div>
+        </motion.div>
       ) : null}
-      <div className="absolute left-[50%] top-2 translate-x-[-50%]">
+      <div className="absolute left-[50%] flex items-center translate-x-[-50%]">
         <Logo />
       </div>
     </header>
