@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <AnimateText
         text="Thank you for your interest"
-        className="mt-20 text-6xl"
+        className="mt-20 text-7xl xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl xs:text-2xl"
       />
       <motion.div
         className="h-full mt-10"
@@ -22,11 +22,11 @@ const ContactPage = () => {
         animate={{ y: "0%" }}
         transition={{ duration: 1.75 }}
       >
-        <div className="flex items-center px-32 justify-center gap-20 dark:text-light">
+        <div className="flex items-center px-32 xl:px-24 lg:px-16 md:px-12 sm:px-8 xs:px-4 justify-center dark:text-light">
           {/* FORM CONTAINER */}
           <form
             ref={form}
-            className="h-1/2 lg:h-full w-3/4 bg-light dark:bg-dark rounded-xl text-xl flex flex-col gap-8 justify-center p-24"
+            className="h-1/2 lg:h-full w-3/4 lg:w-full bg-light dark:bg-dark rounded-xl text-xl flex flex-col gap-8 justify-center py-20"
           >
             <span>Your Message,</span>
             <textarea
