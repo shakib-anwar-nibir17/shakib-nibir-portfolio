@@ -13,17 +13,17 @@ const FeaturedProject = ({
 }) => {
   return (
     <article
-      className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark dark:border-light bg-light
-    shadow-2xl p-12 my-10 dark:bg-dark"
+      className="w-full flex flex-row lg:flex-col items-center justify-between rounded-3xl border border-solid border-dark dark:border-light bg-light
+    shadow-2xl p-12 lg:p-6 my-10 dark:bg-dark"
     >
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
+        className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg"
       >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
+      <div className="w-1/2 lg:w-full flex flex-col items-start justify-between pl-6">
         <span className="text-primary dark:text-primaryDark font-medium text-xl">
           {type}
         </span>

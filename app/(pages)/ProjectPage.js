@@ -11,8 +11,11 @@ import YzStoreImg from "../../public/Projects/yz-store-ssn17-web-app-1024x768des
 const ProjectPage = () => {
   return (
     <>
-      <AnimateText text="My Projects" className="text-6xl mt-20 mb-16" />
-      <div className="grid grid-cols-12 gap-24 px-32">
+      <AnimateText
+        text="My Projects"
+        className="text-6xl lg:text-5xl sm:text-4xl mt-20 mb-16"
+      />
+      <div className="grid grid-cols-12 gap-24">
         <div className="col-span-12">
           <FeaturedProject
             img={PandaEstateImg}
@@ -35,7 +38,7 @@ const ProjectPage = () => {
             github_server="https://github.com/shakib-anwar-nibir17/inventisync-sn17-server"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 md:col-span-12">
           <Project
             type="MERN Stack"
             img={LuminaLibRaryImg}
@@ -45,7 +48,7 @@ const ProjectPage = () => {
             github_server="https://github.com/shakib-anwar-nibir17/lumina-library-sn17-server"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 md:col-span-12">
           <Project
             type="MERN Stack"
             img={VelocityDriveImg}
@@ -55,7 +58,7 @@ const ProjectPage = () => {
             github_server="https://github.com/shakib-anwar-nibir17/velocity-drive-sn17-server"
           />
         </div>
-        <div className="col-span-6">
+        <div className="col-span-6 md:col-span-12">
           <Project
             type="MERN Stack"
             img={YzStoreImg}
