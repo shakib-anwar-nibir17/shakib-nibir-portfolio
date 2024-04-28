@@ -15,8 +15,8 @@ const ProjectPage = () => {
         text="My Projects"
         className="text-6xl lg:text-5xl sm:text-4xl mt-20 mb-16"
       />
-      <div className="grid grid-cols-12 gap-24">
-        <div className="col-span-12">
+      <div className="grid w-full grid-cols-1 gap-24">
+        <div>
           <FeaturedProject
             img={PandaEstateImg}
             title="Panda Estate"
@@ -27,7 +27,7 @@ const ProjectPage = () => {
             github_server="https://github.com/shakib-anwar-nibir17/panda-estate-server"
           />
         </div>
-        <div className="col-span-12">
+        <div>
           <FeaturedProject
             img={InventiSyncImg}
             title="InventiSync"
@@ -38,6 +38,8 @@ const ProjectPage = () => {
             github_server="https://github.com/shakib-anwar-nibir17/inventisync-sn17-server"
           />
         </div>
+      </div>
+      <div className="grid grid-cols-12 mt-10 xs:gap-2 md:gap-8 lg:gap-6 gap-10">
         <div className="col-span-6 md:col-span-12">
           <Project
             type="MERN Stack"
