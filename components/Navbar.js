@@ -92,7 +92,7 @@ const Navbar = () => {
 
         <nav className="flex items-center justify-center gap-3">
           <motion.a
-            href="/"
+            href="https://github.com/shakib-anwar-nibir17"
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
@@ -101,7 +101,7 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="/"
+            href="http://www.linkedin.com/in/nibir17shakib"
             target={"_blank"}
             whileHover={{ y: -4 }}
             whileTap={{ scale: 0.9 }}
@@ -154,7 +154,7 @@ const Navbar = () => {
 
           <nav className="flex items-center justify-center gap-3 text-light dark:text-dark">
             <motion.a
-              href="/"
+              href="https://github.com/shakib-anwar-nibir17"
               target={"_blank"}
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.9 }}
@@ -163,7 +163,7 @@ const Navbar = () => {
             </motion.a>
 
             <motion.a
-              href="/"
+              href="http://www.linkedin.com/in/nibir17shakib"
               target={"_blank"}
               whileHover={{ y: -4 }}
               whileTap={{ scale: 0.9 }}
