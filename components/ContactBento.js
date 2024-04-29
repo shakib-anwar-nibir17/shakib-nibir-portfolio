@@ -13,7 +13,7 @@ import { twMerge } from "tailwind-merge";
 
 export const ContactBento = () => {
   return (
-    <div className="bg-light dark:bg-dark px-4 py-12 text-dark dark:text-light">
+    <div className="bg-light dark:bg-dark px-4 py-12 md:py-6 text-dark dark:text-light w-1/2 lg:w-full">
       <motion.div
         initial="initial"
         animate="animate"
