@@ -124,7 +124,8 @@ const SocialsBlock = () => (
       className="col-span-6 bg-[#0077B5] dark:bg-[#0077B5] md:col-span-3"
     >
       <a
-        href="#"
+        href="http://www.linkedin.com/in/nibir17shakib"
+        target="_blank"
         className="grid h-full place-content-center text-3xl text-light"
       >
         <SiLinkedin />
