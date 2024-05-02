@@ -5,6 +5,7 @@ import Project from "@/components/Project";
 import InventiSyncImg from "../../public/Projects/inventory-mangement-sn17-web-app-1024x768desktop-8644d8.png";
 import LuminaLibRaryImg from "../../public/Projects/library-lumina-sn17-web-app-1024x768desktop-3f5818.png";
 import PandaEstateImg from "../../public/Projects/panda-estate-sn17-web-app-1024x768desktop-60d302.png";
+import PluraImg from "../../public/Projects/plura.png";
 import VelocityDriveImg from "../../public/Projects/velocity-drive-sn17-web-app-1024x768desktop-106b3f.png";
 import YzStoreImg from "../../public/Projects/yz-store-ssn17-web-app-1024x768desktop-5fad22.png";
 
@@ -20,11 +21,21 @@ const ProjectPage = () => {
           <FeaturedProject
             img={PandaEstateImg}
             title="Panda Estate"
-            type="Featured"
+            type="Featured(Mern)"
             summary="Panda Estate is a real estate management application where the authentication system has been designed from scratch that includes both use registration and user sign-in. JWT for added security in the application and cookies to verify valid users. The server has been designed by node js with the help of Express to create the API routes for the application. MongoDB is the database with Mongoose to help design user and listing models and schema validations. The application also houses Firebase to incorporate Google login. 6. The Front End used React for styling. The state has been managed using the Redux toolkit. 8. A dynamic photo uploading system has been implemented using Firebase Storage. Create a description based on these points"
             link="https://panda-estate-sn17.web.app"
             github="https://github.com/shakib-anwar-nibir17/panda-estate-client"
             github_server="https://github.com/shakib-anwar-nibir17/panda-estate-server"
+          />
+        </div>
+        <div>
+          <FeaturedProject
+            img={PluraImg}
+            title="Plura"
+            type="Featured(Next js)"
+            summary="Plura is dynamic and collaborative web applications where users are able to work on ideas collaboratively and brainstorm for new challenges. Its team experience makes it really easy for users to work on a group project. The Clerk authentication provides utmost security for user authentication and authorization with Liveblocks creating a seamless collaborative experience."
+            link="https://test-deployment-mocha-sigma.vercel.app"
+            github="https://github.com/shakib-anwar-nibir17/realtime-collab-webapp"
           />
         </div>
         <div>
@@ -65,8 +76,9 @@ const ProjectPage = () => {
             type="MERN Stack"
             img={YzStoreImg}
             title="YZ store"
-            link="/"
-            github="/"
+            link="https://yz-store-ssn17.web.app"
+            github="https://github.com/shakib-anwar-nibir17/clothing-store-client"
+            github_server="https://github.com/shakib-anwar-nibir17/clothing-store-server"
           />
         </div>
       </div>
