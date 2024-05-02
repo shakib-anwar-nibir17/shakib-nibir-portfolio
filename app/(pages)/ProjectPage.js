@@ -36,6 +36,7 @@ const ProjectPage = () => {
             summary="Plura is dynamic and collaborative web applications where users are able to work on ideas collaboratively and brainstorm for new challenges. Its team experience makes it really easy for users to work on a group project. The Clerk authentication provides utmost security for user authentication and authorization with Liveblocks creating a seamless collaborative experience."
             link="https://test-deployment-mocha-sigma.vercel.app"
             github="https://github.com/shakib-anwar-nibir17/realtime-collab-webapp"
+            github_server="https://github.com/shakib-anwar-nibir17/realtime-collab-webapp"
           />
         </div>
         <div>
