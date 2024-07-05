@@ -2,6 +2,7 @@ import AnimateText from "@/components/AnimateText";
 
 import FeaturedProject from "@/components/FeaturedProject";
 import Project from "@/components/Project";
+import StayFinderImg from "@/public/Projects/StayFinder.png";
 import InventiSyncImg from "../../public/Projects/inventory-mangement-sn17-web-app-1024x768desktop-8644d8.png";
 import LuminaLibRaryImg from "../../public/Projects/library-lumina-sn17-web-app-1024x768desktop-3f5818.png";
 import PandaEstateImg from "../../public/Projects/panda-estate-sn17-web-app-1024x768desktop-60d302.png";
@@ -17,6 +18,17 @@ const ProjectPage = () => {
         className="text-6xl lg:text-5xl sm:text-4xl mt-20 mb-16"
       />
       <div className="grid w-full grid-cols-1 gap-24">
+        <div>
+          <FeaturedProject
+            img={StayFinderImg}
+            title="Stay Finder"
+            type="Featured(Mern)"
+            summary="Stay Finder is a home stay website where it connects  hosts with users to give them the best experience when it comes to home stay. The application is fully based on MERN where the authentication system has been built using the firebase authentication.JWT and Cookies were also introduced for added security. The website has multiple authorization like User, Hosts and Admin. Each user has different individual dashboard where they can access different features of the website"
+            link="https://stay-finder-client.vercel.app"
+            github="https://github.com/shakib-anwar-nibir17/stay-finder-client"
+            github_server="https://github.com/shakib-anwar-nibir17/stay-finder-server"
+          />
+        </div>
         <div>
           <FeaturedProject
             img={PandaEstateImg}
