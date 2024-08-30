@@ -7,7 +7,7 @@ import banner from "../../public/banner.png";
 const HomePage = () => {
   return (
     <div className="flex flex-row lg:flex-col justify-center items-center gap-20 md:gap-10 py-10">
-      <div class="w-1/2 lg:w-full flex justify-center items-center">
+      <div className="w-1/2 lg:w-full flex justify-center items-center">
         <Image src={banner} alt="banner" priority className="w-3/4" />
       </div>
       <div className="w-1/2 lg:w-full flex flex-col">

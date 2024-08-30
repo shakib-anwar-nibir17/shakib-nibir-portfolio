@@ -3,6 +3,7 @@ import AnimateText from "@/components/AnimateText";
 import Education from "@/components/Education";
 import ProfileImage from "@/components/ProfileImage";
 import Stats from "@/components/Stats";
+import WorkExperience from "@/components/WorkExperience";
 
 const AboutPage = () => {
   return (
@@ -17,6 +18,7 @@ const AboutPage = () => {
         <Stats />
       </div>
       <Education />
+      <WorkExperience />
     </>
   );
 };
