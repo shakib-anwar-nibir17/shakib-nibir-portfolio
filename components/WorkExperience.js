@@ -58,7 +58,7 @@ const WorkExperience = () => {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            company="LawnHive"
+            company="LAWNHIVE"
             position="Front-end Developer(Intern)"
             companyLink="https://lawnhive.com/"
             address="Mirpur Dhaka, Bangladesh"
@@ -70,8 +70,24 @@ const WorkExperience = () => {
             position="Software Developer(Intern)"
             companyLink="https://www.perceptron.site"
             address="Mohakhali, Dhaka,Bangladesh"
-            time="July 2024 - August 2024"
-            work="Active"
+            time="July 2024 - October 2024"
+            work="Intern Completed"
+          />
+          <Details
+            company="PERCEPTRON BD"
+            position="Software Developer(Level-1)"
+            companyLink="https://www.perceptron.site"
+            address="Mohakhali, Dhaka,Bangladesh"
+            time="October 2024 - March 2025"
+            work="Left"
+          />
+            <Details
+            company="DEVS_ON_STEROIDS"
+            position="Front-end Developer"
+            companyLink="https://www.devsonsteroids.com/"
+            address="Jamaica, NY, USA"
+            time="March 2025 - October 2025"
+            work="Left"
           />
         </ul>
       </div>

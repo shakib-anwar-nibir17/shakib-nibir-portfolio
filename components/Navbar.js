@@ -5,8 +5,8 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
-import { MoonIcon, SunIcon } from "./Icons";
 import Logo from "./Logo";
+import { AnimatedThemeToggler } from "@/components/ui/AnimatedThemeToggler";
 
 const CustomLinks = ({ href, title, className = "" }) => {
   const path = usePathname();
@@ -52,7 +52,7 @@ const CustomMobileLinks = ({ href, title, className = "", toggle }) => {
 };
 
 const Navbar = () => {
-  const [mode, setMode] = useThemeSwitcher();
+  useThemeSwitcher();
   const [isOpen, setIsOpen] = useState();
 
   const handleChange = () => {
@@ -109,16 +109,7 @@ const Navbar = () => {
             <SiLinkedin className="text-2xl" />
           </motion.a>
 
-          <button
-            className="flex items-center justify-center rounded-full p-1"
-            onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          >
-            {mode === "dark" ? (
-              <SunIcon className={"fill-dark"} />
-            ) : (
-              <MoonIcon className={"fill-dark"} />
-            )}
-          </button>
+          <AnimatedThemeToggler />
         </nav>
       </div>
 
@@ -171,16 +162,7 @@ const Navbar = () => {
               <SiLinkedin className="text-2xl" />
             </motion.a>
 
-            <button
-              className="flex items-center justify-center rounded-full p-1"
-              onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            >
-              {mode === "dark" ? (
-                <SunIcon className={"fill-dark"} />
-              ) : (
-                <MoonIcon className={"fill-dark"} />
-              )}
-            </button>
+            <AnimatedThemeToggler />
           </nav>
         </motion.div>
       ) : null}
