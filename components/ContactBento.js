@@ -65,7 +65,7 @@ const HeaderBlock = () => (
     <h1 className="mb-12 text-2xl font-medium leading-tight">
       Hi, I'm Shakib Nibir <span></span>
       <span className="text-dark/40 dark:text-light/75">
-        I am interested in frontend opportunity focused on MERN technology both
+        I am interested in frontend or full-stack opportunity focused on MERN technology both
         remote and onsite. Feel free to connect to have elaborate discussion.
       </span>
     </h1>
